@@ -1,18 +1,11 @@
-# Programación II
 
-## Diagrama de Clases de Implementación: Gestión de Biblioteca Universitaria
-
-**Laura Castro**
-
-**Programación II**
-
-**17/05/2026**
+# Diagrama de Clases de Implementación: Gestión de Biblioteca Universitaria
 
 ---
 
 ## Diagrama de Clases
 
-<!-- Insertar aquí la imagen original del diagrama de clases -->
+<!-- diagrama-biblioteca.png -->
 
 ---
 
