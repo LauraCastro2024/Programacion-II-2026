@@ -184,7 +184,7 @@ No se reciben datos externos. Se utiliza la colección de vehículos registrados
 
 ## c) Especificación del diseño elegido
 
-### Diagrama de Clases de Implementación en UML
+![### Diagrama de Clases de Implementación en UML](diagrama-alquiler-vehiculos.png)
 
 En el siguiente diagrama se representan únicamente los atributos de las clases, de acuerdo con lo solicitado en la consigna. Los métodos se detallan posteriormente en la especificación de cada clase.
 
