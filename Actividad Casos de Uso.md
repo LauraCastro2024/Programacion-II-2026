@@ -210,7 +210,7 @@ Representa el repositorio central de preguntas reutilizables utilizado por los d
 - **CU-07:** Mostrar resultado
 - **CU-08:** Consultar reportes
 
-### Diagrama de Casos de Uso (UML simplificado)
+### Diagrama 
 ![Diagrama de Casos de Uso UML](diagrama-casos-de-uso.png)
 
 ---
