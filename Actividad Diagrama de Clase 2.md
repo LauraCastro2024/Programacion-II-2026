@@ -5,7 +5,7 @@
 
 ## Diagrama de Clases
 
-<!-- diagrama-biblioteca.png -->
+![Diagrama de clases](diagrama-biblioteca.png)
 
 ---
 
