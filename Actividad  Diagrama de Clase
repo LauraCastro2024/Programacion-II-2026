@@ -35,6 +35,7 @@ Para el sistema planteado se identifican las siguientes clases:
 **`capitanea`:** cada jugador puede capitanear 0 o 1 equipo, mientras que cada equipo es capitaneado por un solo jugador.
 
 Dado que ambas asociaciones representan vínculos de naturaleza distinta entre las mismas clases, es válido y necesario modelarlas por separado. La asociación integra expresa pertenencia al equipo, mientras que capitanea expresa un rol de liderazgo dentro de él.
+![Diagrama de clases conceptual](diagrama-clases-certamenes.png)
 
 > El diagrama representa dos asociaciones diferentes entre las mismas clases, lo cual es válido cuando la realidad del problema exige representar más de una relación entre ellas.
 
