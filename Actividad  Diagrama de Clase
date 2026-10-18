@@ -19,24 +19,24 @@ Para el sistema planteado se identifican las siguientes clases:
 
 **Atributos:**
 
-- nombre
+- `nombre`
 
 ### JUGADOR
 
 **Atributos:**
 
-- cédula
-- apellido
+- `cédula`
+- `apellido`
 
 ### Asociaciones entre ambas clases
 
-**integra:** cada jugador integra un único equipo, mientras que cada equipo está integrado por 11 o más jugadores.
+**`integra`:** cada jugador integra un único equipo, mientras que cada equipo está integrado por 11 o más jugadores.
 
-**capitanea:** cada jugador puede capitanear 0 o 1 equipo, mientras que cada equipo es capitaneado por un solo jugador.
+**`capitanea`:** cada jugador puede capitanear 0 o 1 equipo, mientras que cada equipo es capitaneado por un solo jugador.
 
 Dado que ambas asociaciones representan vínculos de naturaleza distinta entre las mismas clases, es válido y necesario modelarlas por separado. La asociación integra expresa pertenencia al equipo, mientras que capitanea expresa un rol de liderazgo dentro de él.
 
-El diagrama representa dos asociaciones diferentes entre las mismas clases, lo cual es válido cuando la realidad del problema exige representar más de una relación entre ellas.
+> El diagrama representa dos asociaciones diferentes entre las mismas clases, lo cual es válido cuando la realidad del problema exige representar más de una relación entre ellas.
 
 ---
 
@@ -44,7 +44,11 @@ El diagrama representa dos asociaciones diferentes entre las mismas clases, lo c
 
 Sí, es necesario incorporar una restricción al diagrama. La restricción es que el jugador que capitanea un equipo debe pertenecer a ese mismo equipo.
 
-**Restricción:** `{El capitán de un equipo debe integrar ese equipo}`
+<box> </box>
+
+**Restricción:**
+
+> `{El capitán de un equipo debe integrar ese equipo}`
 
 Esta restricción es necesaria porque el diagrama, por sí solo, permite que un jugador integre un equipo y capitanee otro diferente. Sin embargo, en la realidad del problema, se entiende que el capitán debe ser uno de los jugadores del equipo que capitanea. Las restricciones se utilizan para evitar situaciones inconsistentes con la realidad modelada.
 
