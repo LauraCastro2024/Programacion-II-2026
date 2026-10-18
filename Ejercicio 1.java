@@ -63,3 +63,6 @@ public class Ejercicio01
     }
 
 }
+
+### Resultado del ejercicio
+  Ejercicio1.png
