@@ -1,0 +1,67 @@
+# Informe Técnico: Análisis inicial de un sistema para la gestión de certámenes futbolísticos
+
+---
+
+## 1. Introducción
+
+El Análisis Orientado a Objetos es una etapa del desarrollo de software que permite comprender y organizar la realidad del problema antes de avanzar hacia el diseño y la implementación. Su finalidad es identificar los objetos relevantes del dominio, las clases a las que pertenecen y las relaciones que existen entre ellos. En esta etapa se construye un modelo conceptual que representa los aspectos importantes de la realidad que el sistema deberá contemplar.
+
+Dentro de esta fase, el Diagrama de Clases Conceptual de UML resulta útil porque permite representar gráficamente las clases, sus atributos, las asociaciones entre ellas y las multiplicidades correspondientes. En este caso, se modela una realidad vinculada a certámenes futbolísticos, considerando las clases Equipo y Jugador.
+
+---
+
+## 2. Modelado Conceptual de Clases
+
+Para el sistema planteado se identifican las siguientes clases:
+
+### EQUIPO
+
+**Atributos:**
+
+- nombre
+
+### JUGADOR
+
+**Atributos:**
+
+- cédula
+- apellido
+
+### Asociaciones entre ambas clases
+
+**integra:** cada jugador integra un único equipo, mientras que cada equipo está integrado por 11 o más jugadores.
+
+**capitanea:** cada jugador puede capitanear 0 o 1 equipo, mientras que cada equipo es capitaneado por un solo jugador.
+
+Dado que ambas asociaciones representan vínculos de naturaleza distinta entre las mismas clases, es válido y necesario modelarlas por separado. La asociación integra expresa pertenencia al equipo, mientras que capitanea expresa un rol de liderazgo dentro de él.
+
+El diagrama representa dos asociaciones diferentes entre las mismas clases, lo cual es válido cuando la realidad del problema exige representar más de una relación entre ellas.
+
+---
+
+## 3. Restricción necesaria
+
+Sí, es necesario incorporar una restricción al diagrama. La restricción es que el jugador que capitanea un equipo debe pertenecer a ese mismo equipo.
+
+**Restricción:** `{El capitán de un equipo debe integrar ese equipo}`
+
+Esta restricción es necesaria porque el diagrama, por sí solo, permite que un jugador integre un equipo y capitanee otro diferente. Sin embargo, en la realidad del problema, se entiende que el capitán debe ser uno de los jugadores del equipo que capitanea. Las restricciones se utilizan para evitar situaciones inconsistentes con la realidad modelada.
+
+La restricción se incorpora como nota en el diagrama UML, asociada a la clase EQUIPO, de modo que quede explícita dentro del modelo y no solo en la descripción textual.
+
+---
+
+## 4. Conclusiones
+
+El Diagrama de Clases Conceptual permite representar de forma clara las clases principales del dominio y sus relaciones. En este caso, las clases EQUIPO y JUGADOR permiten modelar la estructura básica de un certamen futbolístico.
+
+La asociación integra expresa que todo jugador pertenece a un único equipo y que un equipo debe contar con al menos 11 jugadores. Por otra parte, la asociación capitanea indica que un jugador puede ser capitán de cero o de un equipo, y que cada equipo debe tener un solo capitán.
+
+La restricción incorporada evita una inconsistencia del modelo, asegurando que el capitán sea parte del equipo que dirige dentro del campo de juego. De esta manera, el modelo resulta más adecuado a la realidad del problema y cumple con los criterios del Análisis Orientado a Objetos.
+
+---
+
+## 5. Referencias
+
+- Pérez, D. (s.f). Análisis Orientado a Objetos. Programación 2. Material del curso.
+- INET. (s.f). Capítulo III: Análisis Orientado a Objetos. Material de uso exclusivo para el curso de Programación III.
